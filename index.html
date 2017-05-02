@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="js/directory.js"></script>
+</head>
+<body>
+   <!-- Welcome Page 
+   <div data-role="page" id="welcome">
+      <div data-role="header">
+        <h1>Directory</h1>
+      </div>
+
+      <div data-role="main" class="ui-content">
+        <h4>Welcome to our Directory!</h4>
+        <p>This is a sample app that demonstrates how to build applications with jQuery Mobile.</p>
+        <a href="#directory">Go to Directory Page</a>
+      </div>
+
+      <div data-role="footer" data-position="fixed">
+        <h1>Copyright &copy;</h1>
+      </div>
+    </div> -->
+     
+    <!-- Directory Page -->
+    <div data-role="page" id="directory">
+      <div data-role="header">
+        <h1>Directory</h1>
+      </div>
+
+      <div data-role="main" class="ui-content">
+        <form>
+            <input id="autocomplete" data-type="search" placeholder="Find a city...">
+        </form>
+        <div id="welcome">
+            <h4>Welcome to our Directory!</h4>
+            <p>This is a sample app that demonstrates how to build applications with jQuery Mobile.</p>
+        </div>
+          <ul id="autocomplete-input" data-role="listview" data-inset="true">
+          </ul>
+      </div>
+
+      <div data-role="footer" data-position="fixed">
+        <h1>Copyright &copy;</h1>
+      </div>
+    </div>
+    
+    <!-- Employee Details Page -->
+    <div data-role="page" id="employeeDetails">
+      <div data-role="header">
+        <h1>Directory</h1>
+      </div>
+
+      <div data-role="main" class="ui-content">
+        <p>This is Page Three.</p>
+      </div>
+
+      <div data-role="footer" data-position="fixed">
+        <h1>Copyright &copy;</h1>
+      </div>
+    </div>
+    
+    <!-- Direct Reports Page -->
+    <div data-role="page" id="directReports">
+      <div data-role="header">
+        <h1>Direct Reports</h1>
+      </div>
+
+      <div data-role="main" class="ui-content">
+        <p>This is Page Four.</p>
+      </div>
+
+      <div data-role="footer" data-position="fixed">
+        <h1>Copyright &copy;</h1>
+      </div>
+    </div>
+    
+</body>
+</html>
