@@ -14,7 +14,19 @@ $(function () {
                         if (value.employeeId === id) {
                             nameTitleInput += '<img src=' + value.imagePath + '><h3>' + value.name + '</h3><p>' + value.title + '</p>';
                             $nameTitle.html(nameTitleInput);
-                            $("#manager p").text(value.ReportsTo);
+                            $.ajax({
+                                url: "data/json.js",
+                                dataType: "json",
+                                success: function (data) {
+                                    $.each(data, function () {
+                                        $.each(this, function (i, val) {
+                                            if (value.ReportsTo == val.employeeId) {
+                                               $("#manager p").text(val.name); 
+                                            };
+                                        });
+                                    });
+                                }
+                            });
                             $("#directReports p").text("toDo");
                             $("#officePhone p").text(value.officeNumber);
                             $("#officePhone a").attr("href", "tel:" + value.officeNumber);

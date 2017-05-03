@@ -6,7 +6,8 @@
 		"imagePath":"images/amy_jones.jpg",
         "officeNumber":"858-272-0105",
         "cellNumber":"858-337-2108",
-        "email":"amy.jones@egea.com"
+        "email":"amy.jones@egea.com",
+        "ReportsTo":"04"
 	},
 	{
 		"employeeId":"02",
@@ -15,7 +16,8 @@
 		"imagePath":"images/eugene_lee.jpg",
         "officeNumber":"858-272-0106",
         "cellNumber":"619-856-4590",
-        "email":"eugene.lee@egea.com"
+        "email":"eugene.lee@egea.com",
+        "ReportsTo":"05"
 	},
 	{
 		"employeeId":"03",
@@ -24,7 +26,8 @@
 		"imagePath":"images/gary_donovan.jpg",
         "officeNumber":"858-272-0107",
         "cellNumber":"760-364-4843",
-        "email":"eugene.lee@egea.com"
+        "email":"eugene.lee@egea.com",
+        "ReportsTo":"05"
 	},
 	{
 		"employeeId":"04",
@@ -33,7 +36,8 @@
 		"imagePath":"images/james_king.jpg",
         "officeNumber":"858-272-0108",
         "cellNumber":"858-375-9056",
-        "email":"james.king@egea.com"
+        "email":"james.king@egea.com",
+        "ReportsTo":"05"
 	},
 	{
 		"employeeId":"05",
@@ -42,7 +46,8 @@
 		"imagePath":"images/john_williams.jpg",
         "officeNumber":"858-272-0109",
         "cellNumber":"619-708-3895",
-        "email":"john.williams@egea.com"
+        "email":"john.williams@egea.com",
+        "ReportsTo":""
 	},
     {
 		"employeeId":"06",
@@ -51,7 +56,8 @@
 		"imagePath":"images/kathleen_byrne.jpg",
         "officeNumber":"858-272-0110",
         "cellNumber":"619-476-3968",
-        "email":"kathleen.byrne@egea.com"
+        "email":"kathleen.byrne@egea.com",
+        "ReportsTo":"10"
 	},
     {
 		"employeeId":"07",
@@ -60,7 +66,8 @@
 		"imagePath":"images/lisa_wong.jpg",
         "officeNumber":"858-272-0110",
         "cellNumber":"619-476-3968",
-        "email":"lisa.wong@egea.com"
+        "email":"lisa.wong@egea.com",
+        "ReportsTo":"06"
 	},
     {
 		"employeeId":"08",
@@ -69,7 +76,8 @@
 		"imagePath":"images/paul_jones.jpg",
         "officeNumber":"858-272-0111",
         "cellNumber":"619-678-3690",
-        "email":"lisa.wong@egea.com"
+        "email":"lisa.wong@egea.com",
+        "ReportsTo":"06"
 	},
     {
 		"employeeId":"09",
@@ -78,7 +86,8 @@
 		"imagePath":"images/paula_gates.jpg",
         "officeNumber":"858-272-0112",
         "cellNumber":"858-278-0895",
-        "email":"paula_gates@egea.com"
+        "email":"paula_gates@egea.com",
+        "ReportsTo":"06"
 	},
     {
 		"employeeId":"10",
@@ -87,16 +96,18 @@
 		"imagePath":"images/ray_moore.jpg",
         "officeNumber":"858-272-0113",
         "cellNumber":"760-906-4793",
-        "email":"ray.moore@egea.com"
+        "email":"ray.moore@egea.com",
+        "ReportsTo":"05"
 	},
     {
 		"employeeId":"11",
         "name":"Steven Wells",
-		"title":"Founder and CEO",
+		"title":"Lab Technician",
 		"imagePath":"images/steven_wells.jpg",
         "officeNumber":"858-272-0114",
         "cellNumber":"858-378-5834",
-        "email":"steven.wells@egea.com"
+        "email":"steven.wells@egea.com",
+        "ReportsTo":"09"
 	},
     {
 		"employeeId":"12",
@@ -105,6 +116,7 @@
 		"imagePath":"images/julie_taylor.jpg",
         "officeNumber":"858-272-0115",
         "cellNumber":"858-437-5950",
-        "email":"julie.taylor@egea.com"
+        "email":"julie.taylor@egea.com",
+        "ReportsTo":"05"
 	}
 ]}
