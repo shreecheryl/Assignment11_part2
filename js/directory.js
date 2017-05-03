@@ -1,4 +1,4 @@
-$(document).on('pagecreate', '#directory', function () {
+$(function () {
     "use strict";
     $('#autocomplete').on('keyup', function () {
         var userInput = $('#autocomplete').val(),
