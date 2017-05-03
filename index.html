@@ -1,12 +1,14 @@
-<!DOCTYPE html>
+.<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
     <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
     <script src="js/directory.js"></script>
+    <script src="js/employeeDetails.js"></script>
 </head>
 <body>
    <!-- Welcome Page 
@@ -52,11 +54,22 @@
     <!-- Employee Details Page -->
     <div data-role="page" id="employeeDetails">
       <div data-role="header">
-        <h1>Directory</h1>
+        <h1>Employee Details</h1>
       </div>
 
       <div data-role="main" class="ui-content">
-        <p>This is Page Three.</p>
+        <div><img src="images/amy_jones.jpg">
+        <h3>Amy Jones</h3>
+        <p>Research Assistant</p>
+        </div>
+        <div id="employeeInfo">
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#"><h3>View Manager</h3><p>James King</p></a></li>
+                <li><a href="#"><h3>View Direct Reports</h3><p>3</p></a></li>
+                <li><a href="#"><h3>Call Office</h3><p>858-272-0105</p></a></li>   
+                <li><a href="#"><h3>Call Cell</h3><p>858-337-2108</p></a></li> 
+            </ul>
+        </div>
       </div>
 
       <div data-role="footer" data-position="fixed">

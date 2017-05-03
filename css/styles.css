@@ -1,0 +1,9 @@
+#employeeDetails img {
+    float: left;
+    margin-right: 10px;
+}
+
+#employeeInfo {
+    clear:both;
+    margin-top: 120px;
+}
