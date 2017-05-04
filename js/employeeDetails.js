@@ -3,7 +3,8 @@ $(function () {
     $("#autocomplete-input").on("click", function (event) {
         var id = event.target.title,
             $nameTitle = $("#nameTitle"),
-            nameTitleInput = '';
+            nameTitleInput = '',
+            count = 0;
         $.ajax({
             url: "data/json.js",
             dataType: "json",
@@ -20,14 +21,18 @@ $(function () {
                                 success: function (data) {
                                     $.each(data, function () {
                                         $.each(this, function (i, val) {
-                                            if (value.ReportsTo == val.employeeId) {
-                                               $("#manager p").text(val.name); 
-                                            };
+                                            if (value.Reports === "") {
+                                                $("#manager p").text("");
+                                            } else if (value.ReportsTo === val.employeeId) {
+                                                $("#manager p").text(val.name); 
+                                            } else if (value.employeeId === val.ReportsTo) {
+                                                count += 1;
+                                            }
                                         });
+                                        $("#directReports p").text(count);    
                                     });
                                 }
                             });
-                            $("#directReports p").text("toDo");
                             $("#officePhone p").text(value.officeNumber);
                             $("#officePhone a").attr("href", "tel:" + value.officeNumber);
                             $("#cellPhone p").text(value.cellNumber);
