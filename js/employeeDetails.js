@@ -1,6 +1,6 @@
 $(function () {
     "use strict";
-    $("#autocomplete-input").on("click", function (event) {
+    $("#autocomplete-input, #manager").on("click", function (event) {
         var id = event.target.title,
             $nameTitle = $("#nameTitle"),
             nameTitleInput = '',
@@ -21,11 +21,13 @@ $(function () {
                                 success: function (data) {
                                     $.each(data, function () {
                                         $.each(this, function (i, val) {
-                                            if (value.Reports === "") {
+                                            if (value.ReportsTo === "") {
                                                 $("#manager p").text("");
                                             } else if (value.ReportsTo === val.employeeId) {
-                                                $("#manager p").text(val.name); 
-                                            } else if (value.employeeId === val.ReportsTo) {
+                                                $("#manager p").text(val.name);
+                                                $("#manager a").attr("title", val.employeeId);
+                                            }
+                                            if (value.employeeId === val.ReportsTo) {
                                                 count += 1;
                                             }
                                         });
@@ -42,5 +44,7 @@ $(function () {
                 });
 			}
 		});
-    });
-});
+    }); // end of click event on autocomplete-input
+    
+    
+}); // end document ready
