@@ -32,6 +32,7 @@ $(function () {
                                     });
                                     $('#' + idTag).text(count);
                                     $('#autocomplete-input').listview('refresh');
+                                    $('#autocomplete-input').trigger('updatelayout');
                                 });
                             }
                         });

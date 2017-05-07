@@ -1,10 +1,15 @@
 $(function () {
     "use strict";
     $("#directReports-input").on("click", "a", function (event) {
-        var id = event.target.title,
+        var id,
             $nameTitle = $("#nameTitle"),
             nameTitleInput = '',
             count = 0;
+        if (event.target.nodeName === "A") {
+            id = event.target.title;
+        } else {
+            id = event.target.parentNode.title;
+        }
         $.ajax({
             url: "data/json.js",
             dataType: "json",

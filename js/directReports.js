@@ -1,8 +1,13 @@
 $(function () {
     "use strict";
     $("#directReportsItem").on("click", function (event) {
-        var managerId = event.target.title,
+        var managerId,
             drListItems = '';
+        if (event.target.nodeName === "A") {
+            managerId = event.target.title;
+        } else {
+            managerId = event.target.parentNode.title;
+        }
         $.ajax({
             url: "data/json.js",
             dataType: "json",
@@ -15,6 +20,7 @@ $(function () {
                             $("#directReports-input").html(drListItems);
                         }
                         $("#directReports-input").listview("refresh");
+                        $('#directReports-input').trigger('updatelayout');
                     });
                     $("#directReports-input li a").each(function () {
                         var idTag = $(this).attr("title"),
@@ -31,6 +37,7 @@ $(function () {
                                     });
                                     $("#forDirectReports" + idTag).text(count);
                                     $("#directReports-input").listview("refresh");
+                                    $('#directReports-input').trigger('updatelayout');
                                 });
                             }
                         });
