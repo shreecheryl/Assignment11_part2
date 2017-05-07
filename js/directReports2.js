@@ -47,6 +47,8 @@ $(function () {
                             $("#officePhone a").attr("href", "tel:" + value.officeNumber);
                             $("#cellPhone p").text(value.cellNumber);
                             $("#cellPhone a").attr("href", "tel:" + value.cellNumber);
+                            $("#email p").text(value.email);
+                            $("#email a").attr("href", "mailto:" + value.email);
                             $("#employeeInfo-input").listview("refresh");
                         }
                     });
