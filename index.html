@@ -9,6 +9,8 @@
     <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
     <script src="js/directory.js"></script>
     <script src="js/employeeDetails.js"></script>
+    <script src="js/directReports.js"></script>
+    <script src="js/directReports2.js"></script>
 </head>
 <body>
    <!-- Welcome Page 
@@ -36,7 +38,7 @@
 
       <div data-role="main" class="ui-content">
         <form>
-            <input id="autocomplete" data-type="search" placeholder="Find a city...">
+            <input id="autocomplete" data-type="search" placeholder="Find an employee...">
         </form>
         <div id="welcome">
             <h4>Welcome to our Directory!</h4>
@@ -54,9 +56,9 @@
     <!-- Employee Details Page -->
     <div data-role="page" id="employeeDetails">
       <div data-role="header">
-       <a href="#" class="ui-btn ui-btn-left ui-corner-all ui-shadow ui-icon-back ui-btn-icon-left" data-rel="back">Back</a>
+        <a href="#" class="ui-btn ui-btn-left ui-corner-all ui-shadow ui-icon-back ui-btn-icon-left" data-rel="back">Back</a>
         <h1>Employee Details</h1>
-        <a href="#directory" class="ui-btn ui-btn-right ui-corner-all ui-shadow ui-icon-search ui-btn-icon-left">Search</a>
+        <a id="search1" href="#directory" class="ui-btn ui-btn-right ui-corner-all ui-shadow ui-icon-search ui-btn-icon-left">Search</a>
       </div>
 
       <div data-role="main" class="ui-content">
@@ -65,9 +67,9 @@
         <p></p>
         </div>
         <div id="employeeInfo">
-            <ul data-role="listview" data-inset="true">
+            <ul id="employeeInfo-input" data-role="listview" data-inset="true">
                 <li id="manager"><a href="#employeeDetails"><h3>View Manager</h3><p></p></a></li>
-                <li id="directReports"><a href="#"><h3>View Direct Reports</h3><p></p></a></li>
+                <li id="directReportsItem"><a href="#directReports" title=""><h3>View Direct Reports</h3><p></p></a></li>
                 <li id="officePhone"><a href="#"><h3>Call Office</h3><p></p></a></li>   
                 <li id="cellPhone"><a href="#"><h3>Call Cell</h3><p></p></a></li> 
             </ul>
@@ -82,11 +84,14 @@
     <!-- Direct Reports Page -->
     <div data-role="page" id="directReports">
       <div data-role="header">
+        <a href="#" class="ui-btn ui-btn-left ui-corner-all ui-shadow ui-icon-back ui-btn-icon-left" data-rel="back">Back</a>
         <h1>Direct Reports</h1>
+        <a id="search2" href="#directory" class="ui-btn ui-btn-right ui-corner-all ui-shadow ui-icon-search ui-btn-icon-left">Search</a>
       </div>
 
       <div data-role="main" class="ui-content">
-        <p>This is Page Four.</p>
+        <ul id="directReports-input" data-role="listview" data-inset="true">
+        </ul>
       </div>
 
       <div data-role="footer" data-position="fixed">
