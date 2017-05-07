@@ -87,7 +87,7 @@
         "officeNumber":"858-272-0112",
         "cellNumber":"858-278-0895",
         "email":"paula_gates@egea.com",
-        "ReportsTo":"06"
+        "ReportsTo":"02"
 	},
     {
 		"employeeId":"10",
@@ -117,6 +117,6 @@
         "officeNumber":"858-272-0115",
         "cellNumber":"858-437-5950",
         "email":"julie.taylor@egea.com",
-        "ReportsTo":"05"
+        "ReportsTo":"03"
 	}
 ]}

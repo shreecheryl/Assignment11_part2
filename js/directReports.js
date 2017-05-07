@@ -11,7 +11,7 @@ $(function () {
 				$.each(response, function () {
                     $.each(this, function (key, value) {
                         if (value.ReportsTo === managerId) {
-                            drListItems += '<li><a href="#employeeDetails" title=' + value.employeeId + '><img src=' + value.imagePath + '>' + value.name + '<p>' + value.title + '</p><span id=' + value.employeeId + ' class="ui-li-count"></span></a></li>';
+                            drListItems += '<li><a href="#employeeDetails" title=' + value.employeeId + '><img src=' + value.imagePath + '>' + value.name + '<p>' + value.title + '</p><span id="forDirectReports' + value.employeeId + '" class="ui-li-count"></span></a></li>';
                             $("#directReports-input").html(drListItems);
                         }
                         $("#directReports-input").listview("refresh");
@@ -29,7 +29,7 @@ $(function () {
                                             count += 1;
                                         }
                                     });
-                                    $("#" + idTag).text(count);
+                                    $("#forDirectReports" + idTag).text(count);
                                     $("#directReports-input").listview("refresh");
                                 });
                             }
