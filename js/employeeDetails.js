@@ -1,9 +1,15 @@
 $(function () {
     "use strict";
+    // Search Buttons
     $("#search1, #search2").on("click", function () {
         $("#autocomplete-input").html("");
         $("#autocomplete").val("");
     });
+    $(document).on("pageshow", "#directory", function () {
+        $("#autocomplete").focus();
+    });
+    
+    // Create Employee Details
     $("#autocomplete-input, #manager").on("click", function (event) {
         var id,
             $nameTitle = $("#nameTitle"),
